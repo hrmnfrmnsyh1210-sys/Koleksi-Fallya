@@ -167,9 +167,75 @@ function LibraryMap() {
   );
 }
 
+const realVideos = [
+  {
+    id: "nvlckqeILtw",
+    title: "Video Profil Layanan Perpusnas 2018",
+    duration: "4:55",
+    thumbnail: "https://i.ytimg.com/vi/nvlckqeILtw/maxresdefault.jpg",
+    channel: "Humas Perpustakaan Nasional RI"
+  },
+  {
+    id: "yiogrZLFmiA",
+    title: "Profil Layanan Koleksi Foto, Peta dan Lukisan, Perpustakaan Nasional RI",
+    duration: "5:12",
+    thumbnail: "https://i.ytimg.com/vi/yiogrZLFmiA/maxresdefault.jpg",
+    channel: "Perpustakaan Nasional Republik Indonesia"
+  },
+  {
+    id: "BDDz1TnumNw",
+    title: "Profil Layanan Berbasis TIK Perpustakaan Nasional RI",
+    duration: "9:51",
+    thumbnail: "https://i.ytimg.com/vi/BDDz1TnumNw/maxresdefault.jpg",
+    channel: "Perpustakaan Nasional Republik Indonesia"
+  },
+  {
+    id: "np7gg88v-Ow",
+    title: "Tutorial bagi pengunjung pemula untuk membaca di Perpustakaan Nasional",
+    duration: "4:49",
+    thumbnail: "https://i.ytimg.com/vi/np7gg88v-Ow/maxresdefault.jpg",
+    channel: "Perpustakaan Nasional Republik Indonesia"
+  },
+  {
+    id: "s6TJvQ9eq1s",
+    title: "SEJARAH BERDIRINYA PERPUSTAKAAN NASIONAL RI | @INDONESIA",
+    duration: "8:13",
+    thumbnail: "https://i.ytimg.com/vi/s6TJvQ9eq1s/maxresdefault.jpg",
+    channel: "DAAI Magazine"
+  },
+  {
+    id: "CnoYSm1qInM",
+    title: "Perpustakaan Nasional RI, Gedungnya Tertinggi di Dunia",
+    duration: "4:38",
+    thumbnail: "https://i.ytimg.com/vi/CnoYSm1qInM/maxresdefault.jpg",
+    channel: "Majalah Bobo"
+  },
+  {
+    id: "uUCEv8QuRWk",
+    title: "Mengenal Visi Misi Perpustakaan Nasional RI",
+    duration: "1:53",
+    thumbnail: "https://i.ytimg.com/vi/uUCEv8QuRWk/maxresdefault.jpg",
+    channel: "Perpustakaan Nasional Republik Indonesia"
+  },
+  {
+    id: "_F_pmrpyFOI",
+    title: "Peran dan Prestasi Perpustakaan Nasional Indonesia (Bagian I)",
+    duration: "21:29",
+    thumbnail: "https://i.ytimg.com/vi/_F_pmrpyFOI/maxresdefault.jpg",
+    channel: "Humas Perpustakaan Nasional RI"
+  },
+  {
+    id: "OR7WI5rZtA4",
+    title: "Video Profil PPID Perpustakaan Nasional Republik Indonesia",
+    duration: "2:19",
+    thumbnail: "https://i.ytimg.com/vi/OR7WI5rZtA4/maxresdefault.jpg",
+    channel: "Humas Perpustakaan Nasional RI"
+  }
+];
+
 function YoutubePreview() {
   const [visibleVideos, setVisibleVideos] = useState(3);
-  const totalMockVideos = 9;
+  const totalMockVideos = realVideos.length;
 
   return (
     <div className="bg-white rounded-3xl border border-slate-100 p-8 max-w-5xl mx-auto overflow-hidden shadow-2xl shadow-sky-900/5 relative">
@@ -190,7 +256,7 @@ function YoutubePreview() {
           </div>
         </div>
         <a 
-          href="https://www.youtube.com/channel/UC2scvd9X4GX5-qSYrNSsSIw" 
+          href="https://www.youtube.com/@PerpusnasRI" 
           target="_blank" 
           rel="noopener noreferrer"
           className="px-6 py-3 rounded-xl bg-red-600 text-white font-bold hover:bg-red-700 transition-colors flex items-center gap-2 shadow-lg shadow-red-600/30"
@@ -218,26 +284,28 @@ function YoutubePreview() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10 mb-8">
-        {Array.from({ length: totalMockVideos }).map((_, idx) => {
-          const i = idx + 1;
-          if (i > visibleVideos) return null;
+        {realVideos.map((video, idx) => {
+          if (idx >= visibleVideos) return null;
           return (
-            <motion.div 
+            <motion.a 
+              href={`https://www.youtube.com/watch?v=${video.id}`}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              key={i} 
-              className="group cursor-pointer flex flex-col gap-4"
+              key={video.id} 
+              className="group flex flex-col gap-4"
             >
               <div className="aspect-video bg-slate-100 rounded-2xl overflow-hidden relative shadow-md">
                 <img 
-                  src={`https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=600&q=80&sig=${i+10}`} 
-                  alt="Video thumbnail"
+                  src={video.thumbnail} 
+                  alt={video.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-300"></div>
                 <div className="absolute bottom-2 right-2 bg-black/80 text-white text-[10px] px-2 py-1 rounded font-medium backdrop-blur-md">
-                  12:4{i % 10}
+                  {video.duration}
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform group-hover:scale-100 scale-90">
                   <div className="w-14 h-14 bg-red-600 rounded-full flex items-center justify-center text-white shadow-lg shadow-red-600/50">
@@ -246,15 +314,17 @@ function YoutubePreview() {
                 </div>
               </div>
               <div>
-                <h3 className="text-slate-800 font-bold text-base line-clamp-2 leading-snug group-hover:text-red-600 transition-colors">
-                  Jelajahi Mutiara Sejarah Nusantara - Eksplorasi Visual Episode {i}
+                <h3 className="text-slate-800 font-bold text-base line-clamp-2 leading-snug group-hover:text-red-600 transition-colors" title={video.title}>
+                  {video.title}
                 </h3>
-                <p className="text-slate-500 text-sm mt-1.5 font-medium flex items-center gap-1.5">
-                  <span className="w-5 h-5 rounded-full bg-red-600/10 text-red-600 flex items-center justify-center text-[10px] font-bold">P</span>
-                  Perpustakaan Nasional RI
+                <p className="text-slate-500 text-sm mt-1.5 font-medium flex items-center gap-1.5 line-clamp-1" title={video.channel}>
+                  <span className="w-5 h-5 rounded-full bg-red-600/10 text-red-600 flex items-center justify-center min-w-5 shrink-0 text-[10px] font-bold">
+                    {video.channel.charAt(0).toUpperCase()}
+                  </span>
+                  {video.channel}
                 </p>
               </div>
-            </motion.div>
+            </motion.a>
           );
         })}
       </div>
