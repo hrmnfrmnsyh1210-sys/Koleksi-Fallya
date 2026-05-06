@@ -169,67 +169,67 @@ function LibraryMap() {
 
 const realVideos = [
   {
-    id: "nvlckqeILtw",
-    title: "Video Profil Layanan Perpusnas 2018",
-    duration: "4:55",
-    thumbnail: "https://i.ytimg.com/vi/nvlckqeILtw/maxresdefault.jpg",
-    channel: "Humas Perpustakaan Nasional RI"
+    id: "NJjhUbQzuMI",
+    title: "Mozart at the Morgan | Collection in Focus",
+    duration: "4:04",
+    thumbnail: "https://i.ytimg.com/vi/NJjhUbQzuMI/hqdefault.jpg",
+    channel: "The Morgan Library & Museum"
   },
   {
-    id: "yiogrZLFmiA",
-    title: "Profil Layanan Koleksi Foto, Peta dan Lukisan, Perpustakaan Nasional RI",
-    duration: "5:12",
-    thumbnail: "https://i.ytimg.com/vi/yiogrZLFmiA/maxresdefault.jpg",
-    channel: "Perpustakaan Nasional Republik Indonesia"
+    id: "LfPPfSVtnKE",
+    title: "Wolfgang Amadeus Mozart: Treasures from the Mozarteum Foundation of Salzburg",
+    duration: "3:12",
+    thumbnail: "https://i.ytimg.com/vi/LfPPfSVtnKE/hqdefault.jpg",
+    channel: "The Morgan Library & Museum"
   },
   {
-    id: "BDDz1TnumNw",
-    title: "Profil Layanan Berbasis TIK Perpustakaan Nasional RI",
-    duration: "9:51",
-    thumbnail: "https://i.ytimg.com/vi/BDDz1TnumNw/maxresdefault.jpg",
-    channel: "Perpustakaan Nasional Republik Indonesia"
+    id: "yy1OY-FnVJY",
+    title: "Lecture | Francesca Cappelletti: Caravaggio in Focus",
+    duration: "58:08",
+    thumbnail: "https://i.ytimg.com/vi/yy1OY-FnVJY/hqdefault.jpg",
+    channel: "The Morgan Library & Museum"
   },
   {
-    id: "np7gg88v-Ow",
-    title: "Tutorial bagi pengunjung pemula untuk membaca di Perpustakaan Nasional",
-    duration: "4:49",
-    thumbnail: "https://i.ytimg.com/vi/np7gg88v-Ow/maxresdefault.jpg",
-    channel: "Perpustakaan Nasional Republik Indonesia"
+    id: "_6ImWqiYoMA",
+    title: "Instruments of Affection: Mozart's Violin in Concert with Sonnambula",
+    duration: "1:07:22",
+    thumbnail: "https://i.ytimg.com/vi/_6ImWqiYoMA/hqdefault.jpg",
+    channel: "The Morgan Library & Museum"
   },
   {
-    id: "s6TJvQ9eq1s",
-    title: "SEJARAH BERDIRINYA PERPUSTAKAAN NASIONAL RI | @INDONESIA",
-    duration: "8:13",
-    thumbnail: "https://i.ytimg.com/vi/s6TJvQ9eq1s/maxresdefault.jpg",
-    channel: "DAAI Magazine"
+    id: "yJIK8IvSlQI",
+    title: "Come Together: 3,000 Years of Stories and Storytelling",
+    duration: "2:52",
+    thumbnail: "https://i.ytimg.com/vi/yJIK8IvSlQI/hqdefault.jpg",
+    channel: "The Morgan Library & Museum"
   },
   {
-    id: "CnoYSm1qInM",
-    title: "Perpustakaan Nasional RI, Gedungnya Tertinggi di Dunia",
-    duration: "4:38",
-    thumbnail: "https://i.ytimg.com/vi/CnoYSm1qInM/maxresdefault.jpg",
-    channel: "Majalah Bobo"
+    id: "onJnQ8b7Ews",
+    title: "Symposium | A Draftsman of the First Order: Renoir’s Drawing Practice, Part II",
+    duration: "1:44:27",
+    thumbnail: "https://i.ytimg.com/vi/onJnQ8b7Ews/hqdefault.jpg",
+    channel: "The Morgan Library & Museum"
   },
   {
-    id: "uUCEv8QuRWk",
-    title: "Mengenal Visi Misi Perpustakaan Nasional RI",
-    duration: "1:53",
-    thumbnail: "https://i.ytimg.com/vi/uUCEv8QuRWk/maxresdefault.jpg",
-    channel: "Perpustakaan Nasional Republik Indonesia"
+    id: "AUVmaQ74XUQ",
+    title: "Now at the Morgan | Wolfgang Amadeus Mozart: Treasures from the Mozarteum Foundation of Salzburg",
+    duration: "0:59",
+    thumbnail: "https://i.ytimg.com/vi/AUVmaQ74XUQ/hqdefault.jpg",
+    channel: "The Morgan Library & Museum"
   },
   {
-    id: "_F_pmrpyFOI",
-    title: "Peran dan Prestasi Perpustakaan Nasional Indonesia (Bagian I)",
-    duration: "21:29",
-    thumbnail: "https://i.ytimg.com/vi/_F_pmrpyFOI/maxresdefault.jpg",
-    channel: "Humas Perpustakaan Nasional RI"
+    id: "OCpmy578dwg",
+    title: "\"Come Together: 3,000 Years of Stories and Storytelling\" now on view!",
+    duration: "0:15",
+    thumbnail: "https://i.ytimg.com/vi/OCpmy578dwg/hqdefault.jpg",
+    channel: "The Morgan Library & Museum"
   },
   {
-    id: "OR7WI5rZtA4",
-    title: "Video Profil PPID Perpustakaan Nasional Republik Indonesia",
-    duration: "2:19",
-    thumbnail: "https://i.ytimg.com/vi/OR7WI5rZtA4/maxresdefault.jpg",
-    channel: "Humas Perpustakaan Nasional RI"
+    id: "u5L6GYI8jp4",
+    title: "Wolfgang Amadeus Mozart: Treasures from the Mozarteum comes to the Morgan!",
+    duration: "0:30",
+    thumbnail: "https://i.ytimg.com/vi/u5L6GYI8jp4/hqdefault.jpg",
+    channel: "The Morgan Library & Museum"
   }
 ];
 
@@ -244,19 +244,19 @@ function YoutubePreview() {
       <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-6 border-b border-slate-100 pb-8 relative z-10">
         <div className="flex items-center gap-6">
           <div className="w-20 h-20 bg-gradient-to-tr from-red-600 to-pink-500 rounded-2xl flex items-center justify-center text-white font-serif italic text-4xl shadow-lg shadow-red-500/30 shrink-0 transform -rotate-3">
-            P
+            M
           </div>
           <div>
-            <h2 className="text-3xl font-bold text-slate-800 tracking-tight">Perpustakaan Nasional RI</h2>
+            <h2 className="text-3xl font-bold text-slate-800 tracking-tight">The Morgan Library &amp; Museum</h2>
             <div className="text-slate-500 text-sm mt-2 flex gap-4 font-medium">
-               <span className="bg-slate-100 px-2 py-1 rounded-md text-slate-600"><strong>1.2K</strong> Videos</span>
-               <span className="bg-slate-100 px-2 py-1 rounded-md text-slate-600"><strong>105K</strong> Subs</span>
-               <span className="bg-slate-100 px-2 py-1 rounded-md text-slate-600"><strong>15M</strong> Views</span>
+               <span className="bg-slate-100 px-2 py-1 rounded-md text-slate-600"><strong>471</strong> Videos</span>
+               <span className="bg-slate-100 px-2 py-1 rounded-md text-slate-600"><strong>48K</strong> Subs</span>
+               <span className="bg-slate-100 px-2 py-1 rounded-md text-slate-600"><strong>7.5M</strong> Views</span>
             </div>
           </div>
         </div>
         <a 
-          href="https://www.youtube.com/@PerpusnasRI" 
+          href="https://www.youtube.com/channel/UC2scvd9X4GX5-qSYrNSsSIw" 
           target="_blank" 
           rel="noopener noreferrer"
           className="px-6 py-3 rounded-xl bg-red-600 text-white font-bold hover:bg-red-700 transition-colors flex items-center gap-2 shadow-lg shadow-red-600/30"
